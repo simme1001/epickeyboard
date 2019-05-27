@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+
+      <title> Epic keyboard </title>
+
+      <style>
+
+        .row{
+          width: 100vw;
+        }
+
+        .Enter{
+
+        }
+
+        #Backspace{
+          width: 13.7vw;
+          font-size: 24px;
+        }
+
+        #Tab{
+          width: 8vw;
+          font-size: 16px;
+        }
+
+        #ent1{
+          margin-left: 6.3vw;
+          width: 5.45vw;
+          font-size: 24px;
+        }
+
+        #CapsLock{
+          width: 9vw;
+        }
+
+        #ent2{
+          width: 4vw;
+          margin-top: -1.5vh;
+          height: 11.5vh;
+          margin-left: 2.35vw;
+        }
+
+        #ShiftLeft{
+          width: 6vw;
+          font-size: 18px;
+          text-align: left;
+          padding-left: 1vw;
+        }
+
+        #ShiftRight{
+          width: 14.125vw;
+          text-align: right;
+          padding-right: 1vw;
+        }
+
+        #ControlLeft{
+          width: 7vw;
+        }
+
+        #MetaLeft{
+          padding-top: 2vh;
+          padding-bottom: 0vh;
+          height: 8.12vh;
+        }
+
+        #Space{
+          width: 40vw;
+        }
+
+        #PageUp, #PageDown{
+          height: 7vh;
+        }
+
+        #PageDown{
+          text-align: right;
+        }
+
+        #PageUp{
+          text-align: left;
+        }
+
+        #a{
+          margin-left: 1vw;
+        }
+
+        #b{
+          margin-right: 1vw;
+        }
+
+        .r1k{
+          border: solid 0.001px transparent;
+          border-radius: 5px;
+          float: left;
+          margin-left: 0.1vw;
+          margin-right: 0.1vw;
+          margin-top: 0.2vh;
+          margin-bottom: 0.4vh;
+          width: 5.985vw;
+          background-color: #000000;
+          color: white;
+          text-align: center;
+        }
+
+        .r2k, .r3k, .r4k, .r5k, .r6k{
+          border: solid 0.001px transparent;
+          border-radius: 5px;
+          float: left;
+          margin-left: 0.1vw;
+          margin-right: 0.46vw;
+          margin-top: 0.2vh;
+          margin-bottom: 0.6vh;
+          width: 5.985vw;
+          height: 10vh;
+          background-color: #000000;
+          color: white;
+          text-align: center;
+        }
+
+        .r4k, .r5k{
+          margin-right: 0.8vw;
+        }
+
+        .spec{
+          border: solid 0.001px transparent;
+          border-radius: 5px;
+          float: left;
+          margin-left: 0.1vw;
+          margin-right: 0.1vw;
+          margin-top: 0.2vh;
+          margin-bottom: 0.4vh;
+          width: 5.82vw;
+          background-color: #000000;
+          color: white;
+          text-align: center;
+        }
+
+      </style>
+
+      <script>
+
+      function funcDown(){
+        document.getElementById(event.code).style.backgroundColor = "blue";
+      }
+      document.addEventListener("keydown", funcDown);
+      function funcUp(){
+        document.getElementById(event.code).style.backgroundColor = "#000000";
+      }
+      document.addEventListener("keyup", funcUp);
+
+      function entDown(){
+        document.getElementsByClassName("Enter").style.backgroundColor = "blue";
+      }
+      document.addEventListener("keydown", entDown);
+      function entUp(){
+        document.getElementsByClassName("Enter").style.backgroundColor = "#000000";
+      }
+      document.addEventListener("keyup", entUp);
+
+
+       </script>
+
+  </head>
+  <body>
+
+    <div id="keyboard">
+
+      <div class="row">
+        <div class="r1k" class="key" id="Escape">
+          <p> Esc </p>
+      </div>
+        <div class="r1k" id="F1">
+          <p> F1 </p>
+        </div>
+        <div class="r1k" id="F2">
+          <p> F2 </p>
+        </div>
+        <div class="r1k" id="F3">
+          <p> F3 </p>
+        </div>
+        <div class="r1k" id="F4">
+          <p> F4 </p>
+        </div>
+        <div class="r1k" id="F5">
+          <p> F5 </p>
+        </div>
+          <div class="r1k" id="F6">
+            <p> F6 </p>
+          </div>
+          <div class="r1k" id="F7">
+            <p> F7 </p>
+          </div>
+          <div class="r1k" id="F8">
+            <p> F8 </p>
+          </div>
+          <div class="r1k" id="F9">
+            <p> F9 </p>
+          </div>
+          <div class="r1k" id="F10">
+            <p> F10 </p>
+          </div>
+          <div class="r1k" id="F11">
+            <p> F11 </p>
+          </div>
+          <div class="r1k" id="F12">
+            <p> F12 </p>
+          </div>
+          <div class="r1k" id="PrtScr">
+            <p> PrtScr </p>
+          </div>
+          <div class="r1k" id="Insert">
+            <p> Insert </p>
+          </div>
+          <div class="r1k" id="Delete">
+            <p> Delete </p>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="r2k" id="Backquote">
+            <p> ½ <br> § </p>
+          </div>
+          <div class="r2k" id="Digit1">
+            <p> ! <br> 1 </p>
+          </div>
+          <div class="r2k" id="Digit2">
+            <p> " <br> 2 @ </p>
+          </div>
+          <div class="r2k" id="Digit3">
+            <p> # <br> 3 £ </p>
+          </div>
+          <div class="r2k" id="Digit4">
+            <p> ¤ <br> 4 $ </p>
+          </div>
+          <div class="r2k" id="Digit5">
+            <p> % <br> 5 </p>
+          </div>
+          <div class="r2k" id="Digit6">
+            <p> & <br> 6 </p>
+          </div>
+          <div class="r2k" id="Digit7">
+            <p> / <br> 7 { </p>
+          </div>
+          <div class="r2k" id="Digit8">
+            <p> ( <br> 8 [ </p>
+          </div>
+          <div class="r2k" id="Digit9">
+            <p> ) <br> 9 ] </p>
+          </div>
+          <div class="r2k" id="Digit0">
+            <p> = <br> 0 } </p>
+          </div>
+          <div class="r2k" id="Minus">
+            <p> ? <br> + \ </p>
+          </div>
+          <div class="r2k" id="Equal">
+            <p> ` <br> ´ </p>
+          </div>
+        <div class="r2k" id="Backspace">
+          <p> &larr; </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="r3k" id="Tab">
+          <p> |&larr; <br> &rarr;| </p>
+        </div>
+          <div class="r3k" id="KeyQ">
+            <p> Q </p>
+          </div>
+          <div class="r3k" id="KeyW">
+            <p> W </p>
+          </div>
+          <div class="r3k" id="KeyE">
+            <p> E <br> € </p>
+          </div>
+          <div class="r3k" id="KeyR">
+            <p> R </p>
+          </div>
+          <div class="r3k" id="KeyT">
+            <p> T </p>
+          </div>
+          <div class="r3k" id="KeyY">
+            <p> Y </p>
+          </div>
+          <div class="r3k" id="KeyU">
+            <p> U </p>
+          </div>
+          <div class="r3k" id="KeyI">
+            <p> I </p>
+          </div>
+          <div class="r3k" id="KeyO">
+            <p> O </p>
+          </div>
+          <div class="r3k" id="KeyP">
+            <p> P </p>
+          </div>
+          <div class="r3k" id="BracketLeft">
+            <p> Å </p>
+          </div>
+          <div class="r3k" id="BracketRight">
+            <p> ^ <br> &uml; ~ </p>
+          </div>
+          <div class="r3k" class="Enter" id="ent1">
+            <p> &crarr; </p>
+          </div>
+      </div>
+
+      <div class="row">
+        <div class="r4k" id="CapsLock">
+          <p> Caps Lock &deg; </p>
+        </div>
+          <div class="r4k" id="KeyA">
+            <p> A </p>
+          </div>
+          <div class="r4k" id="KeyS">
+            <p> S </p>
+          </div>
+          <div class="r4k" id="KeyD">
+            <p> D </p>
+          </div>
+          <div class="r4k" id="KeyF">
+            <p> F </p>
+          </div>
+          <div class="r4k" id="KeyG">
+            <p> G </p>
+          </div>
+        <div id="KeyH">
+          <div class="r4k" id="KeyH">
+            <p> H </p>
+          </div>
+        </div>
+          <div class="r4k" id="KeyJ">
+            <p> J </p>
+          </div>
+          <div class="r4k" id="KeyK">
+            <p> K </p>
+          </div>
+          <div class="r4k" id="KeyL">
+            <p> L </p>
+          </div>
+          <div class="r4k" id="Semicolon">
+            <p> Ö </p>
+          </div>
+          <div class="r4k" id="Quote">
+            <p> Ä </p>
+          </div>
+          <div class="r4k" id="Backslash">
+            <p> * <br> ' </p>
+          </div>
+          <div class="r4k" class="Enter" id="ent2">
+            <p>  </p>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="r5k" id="ShiftLeft">
+            <p> &#8679; </p>
+          </div>
+          <div class="r5k" id="IntlBackslash">
+            <p> > <br> < | </p>
+          </div>
+          <div class="r5k" id="KeyZ">
+            <p> Z </p>
+          </div>
+          <div class="r5k" id="KeyX">
+            <p> X </p>
+          </div>
+          <div class="r5k" id="KeyC">
+            <p> C </p>
+          </div>
+          <div class="r5k" id="KeyV">
+            <p> V </p>
+          </div>
+          <div class="r5k" id="KeyB">
+            <p> B </p>
+          </div>
+          <div class="r5k" id="KeyN">
+            <p> N </p>
+          </div>
+          <div class="r5k" id="KeyM">
+            <p> M </p>
+          </div>
+          <div class="r5k" id="Comma">
+            <p> ; <br> , </p>
+          </div>
+          <div class="r5k" id="Period">
+            <p> : <br> . </p>
+          </div>
+          <div class="r5k" id="Slash">
+            <p> _ <br> - </p>
+          </div>
+          <div class="r5k" id="ShiftRight">
+            <p> &#8679; </p>
+          </div>
+      </div>
+
+      <div class="row">
+        <div class="r6k" id="ControlLeft">
+          <p> Ctrl </p>
+        </div>
+        <div class="r6k" id="fn">
+          <p> Fn </p>
+        </div>
+          <div class="r6k" id="MetaLeft">
+            <img src="epicwindows.png" height="40px">
+          </div>
+          <div class="r6k" id="AltLeft">
+            <p> Alt </p>
+          </div>
+          <div class="r6k" id="Space">
+            <p>  </p>
+          </div>
+          <div class="r6k" id="AltRight">
+            <p> Alt Gr </p>
+          </div>
+          <div class="r6k" id="ControlRight">
+            <p> Ctrl </p>
+          </div>
+          <div class="spec" id="PageUp">
+            <p id="a"> Page <br> Up </p>
+          </div>
+
+        <div class="spec" id="ArrowUp">
+          <p> &uarr; </p>
+        </div>
+          <div class="spec" id="PageDown">
+            <p id="b"> Page <br> Down </p>
+          </div>
+          <div class="spec" id="ArrowLeft">
+            <p> &larr; </p>
+          </div>
+          <div class="spec" id="ArrowDown">
+            <p> &darr; </p>
+          </div>
+          <div class="spec" id="ArrowRight">
+            <p> &rarr; </p>
+          </div>
+      </div>
+
+    </div>
+
+  </body>
+
+</html>
