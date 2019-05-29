@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="sv">
 
   <head>
 
@@ -24,6 +24,10 @@
         #Backspace{
           width: 13.7vw;
           font-size: 24px;
+        }
+
+        #MetaLeft, img{
+          height: 40px;
         }
 
         #Tab{
@@ -156,6 +160,16 @@
       }
       document.addEventListener("keyup", funcUp);
 
+      function entDown(){
+        document.getElementsByClassName("Enter").style.backgroundColor = "blue";
+      }
+      document.addEventListener("keydown", entDown);
+      function entUp(){
+        document.getElementsByClassName("Enter").style.backgroundColor = "#000000";
+      }
+      document.addEventListener("keyup", entUp);
+
+
        </script>
 
   </head>
@@ -164,7 +178,7 @@
     <div id="keyboard">
 
       <div class="row">
-        <div class="r1k" class="key" id="Escape">
+        <div class="r1k" id="Escape">
           <p> Esc </p>
       </div>
         <div class="r1k" id="F1">
@@ -357,7 +371,7 @@
             <p> &#8679; </p>
           </div>
           <div class="r5k" id="IntlBackslash">
-            <p> > <br> < | </p>
+            <p> > <br> &lt; | </p>
           </div>
           <div class="r5k" id="KeyZ">
             <p> Z </p>
@@ -402,7 +416,7 @@
           <p> Fn </p>
         </div>
           <div class="r6k" id="MetaLeft">
-            <img src="epicwindows.png" height="40px">
+            <img src="epicwindows.png" alt="Windowskey">
           </div>
           <div class="r6k" id="AltLeft">
             <p> Alt </p>
